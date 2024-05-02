@@ -1,0 +1,54 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: blue;
+}
+
+h3{
+    color: blueviolet;
+}
+
+.destacados{
+    color: green;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#caja{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+}
+
+#rojo{
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    background-color: red;
+    border: 50px solid #fddf;
+    }
+
+#verde{
+    background-color: green;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+}
+
+#celeste{
+    width: 500px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    border-color: black;
+    border: 10px solid #dfdfdf;
+}
+
+#contenedor{
+    height: 500px;
+    background-color: orange;
+    border: 20px solid black;
+}
