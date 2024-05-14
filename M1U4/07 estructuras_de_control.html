@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+
+<body>
+	<script>
+		const metros = parseInt(prompt('Ingrese distancia a recorrer:', ''));
+		
+		// Number.isNaN valida que sea un valor numerico
+		if (Number.isNaN(metros)) {
+			document.write(`La distancia ingresada no es válida`);
+		} else if (metros <= 1000) {
+			document.write(`los ${metros} metros, se deben recorrer de a pie`);
+		} else if (metros <= 10000) {
+			document.write(`los ${metros} metros, se deben recorrer en bicicleta`);
+		} else if (metros <= 30000) {
+			document.write(`los ${metros} metros, se deben recorrer en colectivo`);
+		} else if (metros >= 30000) {
+			document.write(`los ${metros} metros, se deben recorrer en auto`);
+		} else if (metros >= 100000) {
+			document.write(`los ${metros} metros, se deben recorrer en avión`);
+		}
+	</script>
+
+
+
+</body>
+
+</html>
