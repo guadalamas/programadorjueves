@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>text area</h1>
+
+    <textarea id="mensaje" cols="30" rows="10"></textarea></label>
+    
+    <div>caracteres: <span id="contar"></span></div>
+
+    <script>
+        var mensaje = document.getElementById('mensaje');
+        var contar = document.getElementById('contar');
+
+        mensaje.addEventListener('keyup', function() {
+            contar.innerText = mensaje.value.length;
+        })
+
+    </script>
+</body>
+
+</html>

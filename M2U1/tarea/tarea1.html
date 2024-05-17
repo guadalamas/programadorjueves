@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="boton rojo" onclick="cambiarFondo('red')"></div>
+        <div class="boton verde" onclick="cambiarFondo('green')"></div>
+        <div class="boton azul" onclick="cambiarFondo('blue')"></div>
+    </div>
+
+    <style>
+        .contenedor {
+            display: flex;
+        }
+
+        .boton {
+            padding: 100px 100px;
+            cursor: pointer;
+        }
+
+        .rojo {
+            background-color: red;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color;
+        }
+
+    </script>
+</body>
+
+</html>
