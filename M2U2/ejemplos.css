@@ -1,0 +1,24 @@
+.texto {
+    position:absolute; top: 120px;
+    color: antiquewhite;
+    font-size:large;
+    margin: 40px;
+
+}
+
+h1 {
+    font-size: 70px
+}
+
+.imagen {
+    width: 600px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 20px;
+}
