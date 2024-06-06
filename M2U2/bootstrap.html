@@ -7,61 +7,93 @@
   <title>bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="ejemplos.css">
+  <link rel="stylesheet" href="ejemplos.css">
 </head>
 
-<body>
-  <ul class="nav nav-underline">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#" style="color: red; background: transparent;">inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="ejemplo1.html"style="color: red; background: transparent;">opcion 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"style="color: red; background: transparent;">opcion 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"style="color: red; background: transparent;">opcion 3</a>
-    </li>
-  </ul>
-  <div class="foto">
-    <img src="https://fakeimg.pl/1920x600/ff0000/661e1e?text=foto&font=bebas" class="img-fluid opacity-75" alt="https://fakeimg.pl/1920x600/ff0000/661e1e?text=foto&font=bebas">
+<body id="page-top" class="index">
+
+  <div class="padding-site">
+
+    <nav class="navbar navbar-default navbar-fixed-top" data-aos="fade-in">
+
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div style="float:left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>
+                </button>
+                <a title="Home | Atlántico Boutique Hotel" href="./"><div class="lg"></div></a>
+            </div>
+            
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Casa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">La Falda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4">Ubicación</a>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1" style="visibility: hidden;">Inicio</h4>
+  </div>
+  <div class="contenedor">
+    <img src="fotos/pileta2.png" alt="fotos pileta" style="position: initial;">
     <div class="texto">
-      <h1>Titulo en grande</h1>
-      <p>Pequeña descripción debajo del título.</p>
+      <h1>Bienvenidos</h1>
+      <p>Te invitamos a conocer bla bla bla bla.</p>
     </div>
-  </div>  
-
-  <div class="d-flex" style="height: 100px;">
-    <div class="vr"></div>
   </div>
+  <h4 id="scrollspyHeading2">Casa</h4>
 
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
-      </div>
-      <div class="carousel-item">
-        <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
-      </div>
-      <div class="carousel-item">
-        <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
-      </div>
+  <h4 id="scrollspyHeading3">La Falda</h4>
+
+  <h4 id="scrollspyHeading4">Ubicación/h4>
+
+    <div class="d-flex" style="height: 100px;">
+      <div class="vr"></div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fakeimg.pl/600x400" class="imagen" alt="https://fakeimg.pl/600x400">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1>la falda</h1>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
