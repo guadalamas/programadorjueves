@@ -1,5 +1,6 @@
 .navbar-nav :active {
     text-decoration: underline;
+    font-weight: 500;
 }
 
 .navbar-nav :hover {
@@ -8,7 +9,7 @@
 
 .nav-link {
     display: flex;
-    align-items:end;
+    align-items:stretch;
     margin-left: 4px;
     margin-right: 4px;
 }
@@ -17,7 +18,11 @@
     position: fixed;
     padding-right: 100%;
     z-index: 1000;
+    box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
+-webkit-box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
+-moz-box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
 }
+
 
 #Inicio {
     position: absolute;
@@ -77,4 +82,8 @@ h1 {
     font-weight: 400;
     background-color: black;
     transform: scale(1.1);
+}
+
+#sección {
+    width: 100px;
 }
