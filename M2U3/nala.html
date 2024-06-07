@@ -64,36 +64,39 @@
       <a type="button" class="btn btn-outline-secondary" href="#carouselExampleAutoplaying">Saber más</a>
     </div>
   </div>
-  <!--inicio nosotros-->
-  <div id="nosotros" class="row py-4 gx-5">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="col-sm-5 col-md-7 p-5">
-        <div class="carousel-item active">
-          <img src="fotos/fondo.jpg" class="d-block w-100" alt="fondo">
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/frente.jpg" class="d-block w-100" alt="frente">
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/pileta.jpg" class="d-block w-100" alt="pileta">
+  <div id="Nosotros" class="container overflow-hidden py-5"> <!--row-->
+    <!--carrusel-->
+    <div class="col-sm-6 col-md-8">
+      <div class="col">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="fotos/fondo.jpg" class="d-block w-100" alt="fondo">
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/frente.jpg" class="d-block w-100" alt="frente">
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/pileta.jpg" class="d-block w-100" alt="pileta">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--tarjeta-->
-    <div class="col-sm-5 col-md-4">
-      <div class="card w-100">
-        <div class="card-body">
-          <h3 class="card-title">Descripción general</h3>
+      <!--tarjeta-->
+      <div class="col-sm-5 col-md-4">
+        <div class="card w-100" id="card">
+          <div class="card-body">
+            <h3 class="card-title">Descripción general</h3>
             <div class="icon1"> <!--icono1-->
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-lamp"
                 viewBox="0 0 16 16" style="margin-bottom: 3px;">
@@ -133,17 +136,17 @@
             <!--boton-->
             <a href="#" class="btn btn-primary" style="margin-top: 15px;">Contactanos</a>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
