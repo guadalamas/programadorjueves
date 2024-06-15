@@ -5,49 +5,68 @@
 
 .navbar-nav :hover {
     text-decoration: underline;
+    color: aliceblue;
 }
 
 .nav-link {
     display: flex;
-    align-items:stretch;
-    margin-left: 4px;
-    margin-right: 4px;
+    align-items: stretch;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: aliceblue;
+}
+
+.navbar-nav {
+    background-color: transparent;
+    font-size: 18px;
 }
 
 .navbar {
     position: fixed;
-    padding-right: 100%;
+    width: 100%;
     z-index: 1000;
-    box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
--webkit-box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
--moz-box-shadow: -1px 4px 5px 1px rgba(43,43,43,0.63);
+    background-color: transparent !important; /* Asegura que el color de fondo sea transparente */
 }
 
+.navbar-toggler {
+ color: aliceblue;
+ border-color: aliceblue;
+ background-color: transparent;
+ overflow: hidden;
+}
 
 #Inicio {
-    position: absolute;
-    top: 100px;
+    background: url(../M2U3/fotos/piletaosc.png) no-repeat;
+    background-size: cover;
     color: whitesmoke;
+    height: 0.5vh;
+    min-height: 650px;
+    text-align: center;
+}
+
+#parrafo {
     font-size: large;
-    margin: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    text-align: center;
+    margin-top: -50px;
 }
 
 h1 {
     font-family: "Roboto", sans-serif;
     font-size: 80px;
     font-weight: 900;
+    margin-top: 110px;
 }
 
 .btn {
     border-color: antiquewhite;
     color: antiquewhite;
-    background-color: rgba(255, 255, 255, 0.1);;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
     font-weight: 300;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 120px;
+    margin-top: -90px;
 }
 
 .btn:hover {
@@ -56,18 +75,13 @@ h1 {
     font-weight: 300;
     background-color: rgba(255, 255, 255, 0.25);
     transform: scale(1.1);
-    
 }
 
 .icon {
     margin-top: 5px;
 }
 
-.icon1 {
-    margin-top: 20px;
-}
-
-.btn-primary { 
+.btn-primary {
     border-color: black;
     color: white;
     background-color: black;
@@ -76,7 +90,7 @@ h1 {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     border-color: black;
     color: white;
     font-weight: 400;
@@ -86,4 +100,34 @@ h1 {
 
 #sección {
     width: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll {
+    scroll-margin-top: 100px;
+
+}
+
+
+.carousel-inner {
+    width: 100%;
+    height: 450px;
+}
+
+.carousel-item img {
+height: 90%;
+object-fit: cover;
+}
+
+#card {
+    width: 449px;
+    height: 450px;
+}
+
+.card-header {
+    font-size: 30px;
+    font-weight: 500;
 }
