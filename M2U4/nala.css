@@ -1,7 +1,8 @@
 /*
   font-family: "Poppins", sans-serif;
 */
-.nav-link {   /*barra de navegación*/
+.nav-link {
+    /*barra de navegación*/
     color: #333333;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -11,12 +12,14 @@
     margin-right: 15px;
 }
 
-.nav-link:active { /*items barra de navegación*/
+.nav-link:active {
+    /*items barra de navegación*/
     text-decoration: underline;
     font-weight: 600;
 }
 
-.nav-link:hover { /*items barra de navegación*/
+.nav-link:hover {
+    /*items barra de navegación*/
     text-decoration: underline;
     font-weight: 600;
 }
@@ -25,11 +28,12 @@
     height: 70px;
 }
 
-.container-fluid { /*imagen*/
-    width: 75vw;
+.container-fluid {
+    /*imagen*/
+    width: 85vw;
     max-width: 1200px;
     min-width: 400px;
-    height: 85vh;
+    height: 80vh;
     margin-top: 80px;
     background: url(../M2U4/fotos/casa.png) no-repeat;
     background-size: cover;
@@ -43,21 +47,44 @@
     -moz-border-radius: 17px 17px 17px 17px;
 }
 
-.wrap-texto { /*texto sobre imagen*/
+.wrap-texto {
+    /*texto sobre imagen*/
     color: #e6e6e6;
     width: 40%;
     text-align: center;
+
 }
 
-.titulo { 
+.titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    /*boton saber más*/
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: table-column;
+    justify-content: end;
     font-family: "Poppins", sans-serif;
 }
 
-#sección { /*que hacer*/
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+#sección {
+    /*que hacer*/
     width: 100%;
 }
 
-.nosotros { /*titulo nosotros*/
+.nosotros {
+    /*titulo nosotros*/
     display: flex;
     justify-content: center;
     font-family: "Poppins", sans-serif;
@@ -65,7 +92,8 @@
     margin-top: 30px;
 }
 
-p { /*texto nosotros*/
+#nosotros {
+    /*texto nosotros*/
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
@@ -77,10 +105,40 @@ h3 {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-weight: 700;
+    margin: 20px;
 }
 
+.btn-outline-dark {
+    /*boton 8+*/
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100px;
+    height: 12vh;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    background: url(M2U4/fotos/cocina1.jpg)no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    text-shadow: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-size: 30px;
+}
 
-.columna { /*imagen principal de nosotros*/
+.btn-outline-dark:hover {
+    opacity: 1;
+}
+
+.container-fluid1 {
+    border-color: #333333;
+    border-radius: 10px;
+    border: 10px;
+}
+.columna {
+    /*imagen principal de nosotros*/
     padding: 2rem;
 }
 
@@ -91,13 +149,15 @@ h3 {
     border-radius: 10px;
 }
 
-.lista-fotos { /*columna de fotos*/
+.lista-fotos {
+    /*columna de fotos*/
     width: 100%;
     padding: 2rem;
     display: block;
     list-style: none;
     z-index: 0;
     border-color: black;
+    margin: 20px;
 }
 
 .lista-fotos li a {
@@ -108,8 +168,8 @@ h3 {
 .lista-fotos li a img:hover {
     transform: scale(1.1);
     opacity: 1;
-    }
-    
+}
+
 .lista-fotos li a img {
     height: 12vh;
     object-fit: cover;
@@ -125,21 +185,33 @@ li {
     list-style: none;
 }
 
-.card-text { /*servicios y escencial*/
-    columns: 3;
-    text-align: left;
+.modal {
+    --bs-modal-widht: 800px;
 }
+
+.modal-body {
+    padding: 0;
+}
+
 
 .card {
     width: 80vw;
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
-.card-title {
-    margin-left: 30px;
+.card-text {
+    /*servicios y escencial*/
+    columns: 4;
+    text-align: left;
+    margin: 0 auto;
+}
+
+h5 {
+    font-family: "Poppins", sans-serif;
 }
 
 iframe {
+    /*mapa*/
     width: 100vw;
     height: 70vh;
 }
@@ -150,4 +222,107 @@ iframe {
 
 html {
     scroll-behavior: smooth;
+}
+
+.btn-primary {
+    border-color: #333333;
+    background-color: #a0a0a0;
+    color: #333333;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+.custom-card {
+    width: 20vw;
+    text-align: left;
+    border: transparent;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+ 
+
+.custom-card:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    border-color: #333333;
+}
+
+.custom-card .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.tarjetas {
+    border-color: #a5a5a5;
+    background-color: transparent;
+    color: #333333;
+    height: 70vh;
+    padding: 0;
+}
+
+.tarjetas:hover {
+    border-color: #a5a5a5;
+    background-color: transparent;
+    color: #333333;
+}
+
+.align {
+    text-align: left;
+    height: 60px;
+}
+
+.card-title {
+    margin-top: 5px;
+    height: 40px;
+}
+
+.text {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.carousel-control-prev-icon {
+    background-color: #333333;
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+.carousel-control-next-icon {
+    background-color: #333333;
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+.boton {
+    text-decoration: none;
+    color: inherit;
+}
+
+.que-hacer {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #00904f;
+    font-family: "Poppins", sans-serif;
+    color: #f2f2f2;
+    height: 100;  
+}
+
+.font-weight {
+    font-weight: 600;
+    columns: 3;
+}
+
+.subtitles {
+    font-weight: 400;
+    columns: 3;
 }
