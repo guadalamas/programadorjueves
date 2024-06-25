@@ -1,0 +1,172 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #98ff830e
+}
+
+.titulo {
+    font-weight: 700;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.329);
+    font-size: 55px;
+}
+
+.intro {
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 45px;
+    color: #333333;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    color: #333333;
+    text-align: center;
+}
+
+.container {
+    background: url(fotos/villagiardino.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+}
+
+.row {
+    margin: 20px;
+}
+
+.molino {
+    background: url(fotos/villagiardino.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.tanque {
+    background: url(fotos/tanque.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.texto {
+margin-right: 40px;
+}
+
+.gruta {
+    background: url(fotos/gruta.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.camino {
+    background: url(fotos/camino.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+    margin-bottom: 20px;
+}
+
+.bosque {
+    background: url(fotos/bosque.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.reloj {
+    background: url(fotos/relojvg.png);
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.mamamia {
+    background: url(fotos/mamamia.png);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.castelnovo {
+    background: url(fotos/castelnovo.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.angelica {
+        background: url(fotos/paletas.png);
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+}
+
+.footer { /*pie*/
+    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-texts {
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.social-link-container /*iconos y titulos*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-link-container a { /*iconos social media*/
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #f2f2f2;
+    margin: 30px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-link-container a:hover {
+    transform: scale(1.1);
+    background-color: #dfdfdf9f;
+}
+
+.derechos { /*texto final*/
+    color: #f2f2f2;
+    opacity: 0.7;
+    text-align: center;
+}
+

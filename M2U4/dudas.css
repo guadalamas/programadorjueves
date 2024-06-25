@@ -1,0 +1,28 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #98ff830e
+}
+
+.titulo {
+    font-weight: 700;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.329);
+    font-size: 55px;
+}
+
+.intro {
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 45px;
+    color: #333333;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    color: #333333;
+    text-align: center;
+}
