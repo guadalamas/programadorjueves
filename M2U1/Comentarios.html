@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="comentarios.css">
+</head>
+
+<body>
+    <h1>Comentarios</h1>
+    <p>Tu opinión nos importa es por eso que creamos este espacio. Dedicado a quienes quieran aportar al sitio y se animen 
+        a contar sobre su estadía en Nala La Falda. También podes agregar fotos
+        para que el resto vea tu vivencia. ¡Esperamos hayas disfrutado del alojamiento!</p>
+    <form action="/enviar" id="formulario">
+
+        <p>
+            <label><textarea name="mensaje" cols="60" rows="20"></textarea></label>
+        </p>
+        <p>
+            <button type="button" class="btn btn-outline-dark">Enviar</button>
+        </p>
+    </form>
+
+    <script>
+        // formulario
+        const formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (e.currentTarget.nombre.value == '') {
+                alert('El campo nombre es requerido');
+                return;
+            }
+
+            if (e.currentTarget.mensaje.value == '') {
+                alert('El campo mensaje es requerido');
+                return;
+            }
+
+            alert(`Gracias ${e.currentTarget.nombre.value} por enviar tu opinión `);
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+<div id="carouselExampleDark" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item dos active"><!--primera fila-->
+            <h3>Más visitadas</h3>
+            <div class="row ">
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--hotel eden-->
+                                <img src="fotos/edem.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hotel Edén</h5>
+                                    <p class="card-text">Visita el hotel que dio origen a la ciudad. Puedes conocer
+                                        su historia y cómo fue evolucionando a través del tiempo.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a
+                            href="https://www.turismolafalda.gob.ar/circuitoTuristicoDetalle/elDragon"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"><!--el dragón-->
+                                <img src="fotos/eldragon.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mirador El Dragón</h5>
+                                    <p class="card-text">Para ir en auto o caminando, a metros del Hotel Edén se
+                                        encuentra este mirador imperdible
+                                        con
+                                        una vista hermosa de las sierras.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a
+                            href="/Users/Guada/Documents/programadorweb/proyectofinal/views/giardino.hbs"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--villa giardino-->
+                                <img src="fotos/Villa-Giardino.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Villa Giardino</h5>
+                                    <p class="card-text">No es parte de La Falda pero tiene lugares muy lindos
+                                        para visitar y por eso decidimos hacerle una sección especial.
+                                    </p>
+                                </div>
+                            </div>
+                </div></a></button>
+            </div>
+        </div>
+        <div class="carousel-item"> <!--segunda fila-->
+            <h3>Deportivas</h3>
+            <div class="row">
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--la banderita -->
+                                <img src="fotos/labanderita.jpg" class="card-img-top" alt="la banderita">
+                                <div class="card-body">
+                                    <h5 class="card-title">La Banderita</h5>
+                                    <p class="card-text">Si te gustan las alturas y hacer deporte, esto es para vos.
+                                        Está bien señalizado y abierto al público aunque también se puede hacer con
+                                        un guía.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"><!--cavernas-->
+                                <img src="fotos/cavernas.jpg" class="card-img-top" alt="Cavernas El Sauce">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cavernas El Sauce</h5>
+                                    <p class="card-text">Siguiendo las aventuras, te recomendamos visitar esta
+                                        caverna natural, donde te van guiando su recorrido.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <!--Dique-->
+                            <div class="card h-100">
+                                <img src="fotos/diquelf.jpeg" class="card-img-top" alt="Dique">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dique</h5>
+                                    <p class="card-text">Se recomienda viajar en automóvil. Aquí se encuentra el
+                                        complejo de las Siete Cascadas, un destino ideal para visitar durante el
+                                        verano, especialmente en días de mucho calor.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+            </div>
+        </div>
+        <div class="carousel-item"> <!--tercer fila-->
+            <h3>Meriendas
+            </h3>
+            <div class="row">
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--the house -->
+                                <img src="fotos/thehouse.jpg" class="card-img-top" alt="The House">
+                                <div class="card-body">
+                                    <h5 class="card-title">The House</h5>
+                                    <p class="card-text">Especial para la hora de la merienda, con carta
+                                        variada y ubicado en el centro de la Ciudad, muy cerca de la Avenida
+                                        principal.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"><!--isolina-->
+                                <img src="fotos/isolina.jpg" class="card-img-top" alt="Isolina">
+                                <div class="card-body">
+                                    <h5 class="card-title">Isolina Casa de Té</h5>
+                                    <p class="card-text">Si pasas por La Falda, no te puedes perder esta casa de té
+                                        con sabores únicos, ideal para los amantes de lo dulce y lo salado.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <!--Marco Polo-->
+                            <div class="card h-100">
+                                <img src="fotos/marco.jpg" class="card-img-top" alt="Marco Polo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marco Polo</h5>
+                                    <p class="card-text">Se destaca por su ambiente acogedor y su variada oferta de
+                                        cócteles y bebidas, proporcionando una experiencia relajante en un entorno
+                                        pintoresco de las Sierras de Córdoba.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+            </div>
+        </div>
+        <div class="carousel-item"> <!--cuarta fila-->
+            <h3>Bares y cervezas</h3>
+            <div class="row">
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--Black Box -->
+                                <img src="fotos/black.jpg" class="card-img-top" alt="Black Box">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Box</h5>
+                                    <p class="card-text">Tiene un ambiente moderno y se especializa en vinos y
+                                        cócteles. Es súper animado y lo visitan un montón de gente que quiere
+                                        pasarla bien con buena comida y compañía.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"><!--Gavilán Patas Largas-->
+                                <img src="fotos/gavilan.png" class="card-img-top" alt="Gavilán Patas Largas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gavilán Patas Largas</h5>
+                                    <p class="card-text">Se encuentra sobre la Avenida Edén y es el lugar perfecto
+                                        si estás buscando una rica birra y algo salado para picar.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <!--Why Not-->
+                            <div class="card h-100">
+                                <img src="fotos/whynot.jpg" class="card-img-top" alt="Why Not">
+                                <div class="card-body">
+                                    <h5 class="card-title">Why Not</h5>
+                                    <p class="card-text">En este bar, podés disfrutar de una excelente variedad de
+                                        cócteles mientras te divertís bailando. Es el lugar ideal para pasar una
+                                        noche entre amigos, disfrutando de buena música y un ambiente movido. </p>
+                                </div>
+                            </div>
+                </div></a></button>
+            </div>
+        </div>
+        <div class="carousel-item"> <!--quinta fila-->
+            <h3>Heladerías</h3>
+            <div class="row ">
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"> <!--Si Quiero -->
+                                <img src="fotos/siquiero.jpg" class="card-img-top" alt="Si Quiero">
+                                <div class="card-body">
+                                    <h5 class="card-title">Si Quiero</h5>
+                                    <p class="card-text">Es famosa por ofrecer una amplia variedad de sabores
+                                        artesanales, elaborados con ingredientes frescos y poco comunes.
+                                    </p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <div class="card h-100"><!--San Cayetano-->
+                                <img src="fotos/sancayetano.jpg" class="card-img-top" alt="San Cayetano">
+                                <div class="card-body">
+                                    <h5 class="card-title">San Cayetano</h5>
+                                    <p class="card-text">Esta también es una heladería artesanal. Está ubicada sobre la 
+                                        zona céntrica, tiene dos sucursales sobre la avenida
+                                        principal.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+                <div class="col"><button class="botones-tarjetas"><a href="https://edenhotellafalda.com.ar/"
+                            target="_blank" class="paginas">
+                            <!--Grido-->
+                            <div class="card h-100">
+                                <img src="fotos/grido.jpg" class="card-img-top" alt="Grido">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grido</h5>
+                                    <p class="card-text">Vayas a donde vayas siempre va a haber una y si
+                                        vas a lo seguro siempre la podés visitar.</p>
+                                </div>
+                            </div>
+                </div></a></button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

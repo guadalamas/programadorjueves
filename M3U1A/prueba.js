@@ -1,3 +1,3 @@
 var hoy = new Date();
 
-console.log (`Hoy es ${hoy}`);
+console.log(`hoy es ${hoy}`);

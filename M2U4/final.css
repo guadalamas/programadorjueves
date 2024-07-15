@@ -73,6 +73,7 @@ body {
     color: #f2f2f2;
     background-color: rgba(44, 44, 44, 0.267);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 20px;
 }
 
 .btn-outline-secondary:hover {
@@ -81,12 +82,41 @@ body {
     border-color: #f2f2f2;
 }
 
+
+.btn-outline-dark {
+    /*boton turismo*/
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #5f852dec;
+    color: #f2f2f2;
+    width: 90vw;
+    height: 75vh;
+    border: none;
+    margin-top: 60px;
+}
+
+.btn-outline-dark:hover {
+    background-color: #5f852d;
+    border: none;
+}
+
+.box {
+    text-align: left;
+    margin: 100px 50px;
+}
+
+.portada {
+    width: 500px;
+    height: 70vh;
+    object-fit: cover;
+    margin: auto 0;
+}
+
 .center {
     /*seccion nosotros*/
     text-align: center;
-    color: #333333;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 .nosotros {
@@ -98,6 +128,15 @@ body {
 .subtitulos { 
     max-width: 700px;
     margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
 }
 
 .uno {
@@ -113,15 +152,14 @@ body {
     object-position: center;
 } 
 
-.carousel-inner {
-    border: 2px;
-    border-radius: 10px;
-}
 
 .card-text { /*tarjetas de escencial y servicios*/
     list-style: none;
 }
 
+.card-text li {
+    margin-bottom: 10px;
+}
 .card-header { /*titulo de seccion servicios*/
     font-weight: 700;
     font-size: 35px;
@@ -129,6 +167,7 @@ body {
     justify-content: center;
     margin: 30px 0px;
     text-align: center;
+    margin: 60px 0;
 }
  
 .col { /*columnas tarjetas*/
@@ -137,9 +176,14 @@ body {
     justify-content: center;
 }
 
+.card-title {
+    font-weight: 600;
+}
 .card {
 width: 400px;
 margin-bottom: 20px;
+height: 330px;
+background-color: #21583b28;
 }
 
 .new { /*boton politica*/
@@ -155,6 +199,70 @@ margin-bottom: 20px;
     transform: scale(1.1);
     color: blue;
 
+}
+
+.comedor {
+    background: url(fotos/comedor.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: bottom;
+}
+
+.living {
+    background: url(fotos/living.jpg);
+    background-size: cover;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.cocina {
+    background: url(fotos/cocina1.1.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: bottom;
+}
+
+.cocina1 {
+    background: url(fotos/cocina1.jpg);
+    background-size: cover;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.hab1 {
+    background: url(fotos/hab1.1.jpg);
+    background-size: cover;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.hab2{ 
+    background: url(fotos/hab2.jpg);
+    background-size: cover;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.baño1 {
+    background: url(fotos/baño1.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: bottom;
+}
+
+.baño2 {
+    background: url(fotos/baño2.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: bottom;
+}
+
+.col-lg-5 {
+    margin: 5px;
 }
 
 .mapa { /*titulo ubi*/
@@ -173,7 +281,7 @@ margin: 30px 0px;
 .turismo { /*titulo seccion turismo*/
     font-weight: 700;
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .botones-tarjetas { /*botones tarjetas carrusel*/
@@ -201,13 +309,6 @@ margin: 30px 0px;
     object-fit: cover;
 }
 
-h3 { /*subtitulo carrusel*/
-    font-weight: 600;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0px;
-}
 
 #carouselExampleDark { /*carrusel de tarjetas */
     margin-top: 30px;
@@ -245,6 +346,15 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.contatco {
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+
 }
 
 .footer-texts {
@@ -290,3 +400,41 @@ html {
     color: #333333;
 }
 
+.form-label {
+    margin: 0 auto;
+}
+
+
+.molino { /*habitaciones*/
+    background: url(fotos/hab1.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    object-position: bottom;
+}
+
+.tanque { /*al aire libre*/
+    background: url(fotos/quincho.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.texto {
+margin-right: 40px;
+}
+
+.gruta { /*estadia*/
+    background: url(fotos/cama.jpg);
+    background-size: cover;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+
+}
+
+.g-3 {
+    margin-top: 30px;
+}
