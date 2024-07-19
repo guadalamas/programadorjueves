@@ -45,7 +45,7 @@
 }
 
 .container {
-  background: url(fotos/casa.png) no-repeat;
+  background: url(/fotos/casa.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
